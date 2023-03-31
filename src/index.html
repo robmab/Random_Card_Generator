@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Generador de Cartas Aleatorias</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/4geeks.ico" />
+</head>
+
+<body>
+
+  <div class="card">
+    <p id="icon">♦</p>
+    <h1 id="number">8</h1>
+    <p id="icon">♥</p>
+  </div>
+  <div class="inputs">
+
+    <div class="resize">
+      <div class="in input-group mb-3">
+
+        <input type="number" class="form-control" placeholder="280" aria-label="Username"
+          aria-describedby="basic-addon1" min="280">
+        <div class=" input-group-prepend">
+          <span class=" input-group-text" id="basic-addon1">px width</span>
+        </div>
       </div>
+
+      <div class="in input-group mb-3">
+        <input type="number" class="form-control" placeholder="420" aria-label="Username"
+          aria-describedby="basic-addon1" min="420">
+        <div class="input-group-prepend">
+          <span class=" input-group-text" id="basic-addon1">px width</span>
+        </div>
+
+
+      </div>
+
     </div>
-  </body>
+
+    <button type="button" class="btn btn-danger">Randomizer</button>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/163b8332ba.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

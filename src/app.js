@@ -1,11 +1,30 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+/* SELECTORES */
+let icons = document.querySelectorAll("#icon");
+let number = document.querySelector("#number");
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+/* FUNCIÓN */
+const cardContentPaloValor = () => {
+  const paloPintaLista = ["♦", "♥", "♠", "♣"];
+  const valorCartaLista = [2, 3, 4, 5, 6, 7, 8, 9, 10, "K", "Q", "A", "J"]
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  let paloPinta = paloPintaLista[Math.floor(Math.random() * paloPintaLista.length)];
+  let valorCarta = valorCartaLista[Math.floor(Math.random() * valorCartaLista.length)];
+
+  number.innerHTML = valorCarta;
+
+  if (paloPinta === "♦" || paloPinta === "♥") {
+    icons.forEach(p => {
+      p.style.color = "red"
+      p.innerHTML = paloPinta
+    });
+  } else {
+    icons.forEach(p => {
+      p.innerHTML = paloPinta
+    })
+  }
+}
+
+/* EVENTOS */
+window.onload = () => cardContentPaloValor();
+
+console.log(document.querySelector("#number"))
