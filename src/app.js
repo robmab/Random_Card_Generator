@@ -16,17 +16,14 @@ const cardContentPaloValor = () => {
 
   number.innerHTML = valorCarta;
 
-  if (paloPinta === "♦" || paloPinta === "♥") {
-    icons.forEach(p => {
+  icons.forEach(p => {
+    if (paloPinta === "♦" || paloPinta === "♥") {
       p.style.color = "red"
-      p.innerHTML = paloPinta
-    });
-  } else {
-    icons.forEach(p => {
+    } else {
       p.style.color = "black"
-      p.innerHTML = paloPinta
-    })
-  }
+    }
+    p.innerHTML = paloPinta
+  })
 
   clearTimeout(timer); //reset timer
   timer = window.setInterval(cardContentPaloValor, 10000);
