@@ -8,7 +8,7 @@ body {
     align-items: center;
     flex-direction: column;
 
-    background: #0E7E12 !important;
+    background: #0E7E12;
 }
 
 /* CARD */
@@ -18,54 +18,67 @@ body {
     align-items: center;
 
     margin-top: 10px;
-    height: 420px;
-    width: 280px;
-    min-height: 320px;
-    min-width: 180px;
+    height: 440px;
+    width: 300px;
+
     border-radius: 15px;
     padding: 0 5px 0 3px;
     box-shadow: 2px 2px 10px black;
 }
 
 .card h1 {
-    font-size: 100px;
-    margin: auto;
+    font-size: 130px;
 }
 
 .card p {
-    font-size: 80px;
+    font-size: 110px;
+}
+
+.iconOne p {
+    padding-left: 5px;
+}
+
+.iconTwo p {
+    padding-right: 5px;
+}
+
+.card h1,
+.card p {
+    font-family: "fangsong";
+    margin: 0;
+}
+
+.iconOne {
+    margin: 0 auto auto 0;
+}
+
+.iconTwo {
+    margin: auto 0 0 auto;
 
 }
 
-.card p:nth-child(1) {
-    margin: -5px auto 0 0;
-}
-
-.card p:nth-child(3) {
-    margin: 0 0 -5px auto;
-
-}
-
-/* CARD END*/
 
 /* INPUTS */
 .resize {
-    margin: 15px 0;
+    margin-top: 45px;
 }
-
-
 
 input,
 span {
-    width: 75px !important;
+    width: 85px !important;
     height: 20px;
-    font-size: 15px !important;
-    text-align: end;
-    border-radius: 0 !important;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 1px !important;
+
 }
 
 input::placeholder {
-    color: rgba(58, 58, 58, 0.304) !important;
+    color: rgba(58, 58, 58, 0.304);
+}
+
+input {
+    background-color: red;
 }
 
 span {
@@ -80,5 +93,3 @@ span {
 .inputs {
     text-align: center;
 }
-
-/* INPUTS END/

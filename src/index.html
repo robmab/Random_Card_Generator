@@ -16,35 +16,41 @@
 <body>
 
   <div class="card">
-    <p id="icon">♦</p>
-    <h1 id="number">8</h1>
-    <p id="icon">♥</p>
+    <div class="iconOne">
+      <p id="icon">♦</p>
+    </div>
+    <div class="number">
+      <h1 id="number">8</h1>
+    </div>
+    <div class="iconTwo">
+      <p id="icon">♥</p>
+    </div>
   </div>
+
   <div class="inputs">
 
     <div class="resize">
-      <div class="in input-group mb-3">
 
-        <input type="number" class="form-control" placeholder="280" aria-label="Username"
-          aria-describedby="basic-addon1" min="280">
+      <div class="in input-group mb-3">
+        <input id="inputWidth" type="range" class="form-control" placeholder="280" aria-label="Username"
+          aria-describedby="basic-addon1" min="250" max="500" value="300">
         <div class=" input-group-prepend">
-          <span class=" input-group-text" id="basic-addon1">px width</span>
+          <span class=" input-group-text" id="basic-addon1">Width</span>
         </div>
       </div>
 
       <div class="in input-group mb-3">
-        <input type="number" class="form-control" placeholder="420" aria-label="Username"
-          aria-describedby="basic-addon1" min="420">
+        <input id="inputHeight" type="range" class="form-control" placeholder="420" aria-label="Username"
+          aria-describedby="basic-addon1" min="420" max="700" value="440">
         <div class="input-group-prepend">
-          <span class=" input-group-text" id="basic-addon1">px width</span>
+          <span class=" input-group-text" id="basic-addon1">Height</span>
         </div>
-
-
       </div>
 
     </div>
 
     <button type="button" class="btn btn-danger">Randomizer</button>
+
   </div>
 
 
